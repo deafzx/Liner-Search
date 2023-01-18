@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+int main() {
+    cout<<"No of test cases."<<endl;
+    int t;
+    cin>>t;
+    while(t--){
+        int n;
+        cout<<"size of the array"<<endl;
+        cin>>n;
+        int a[n];
+        for(int i=0;i<n;i++){
+            cin>>a[i];
+        }
+        cout<<"Enter the digit you want to find"<<endl;
+        int data;
+        cin>>data;
+        
+        for(int i=0;i<n;i++){
+            if(a[i]==data){
+                cout<<"Found at the position"<<endl;
+                cout<<i+1<<endl;
+                break;
+            }
+            if(i==n){
+                cout<<"Not found "<<endl;
+            }
+        }      
+    }
+
+    return 0;
+}
